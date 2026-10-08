@@ -1,5 +1,5 @@
 ---
-- host: debian
+- hosts: debian
   become: true
   tasks:
     - name: "Installing curl"
