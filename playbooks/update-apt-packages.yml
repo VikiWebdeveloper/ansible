@@ -1,5 +1,5 @@
 ---
-  -hosts: debain
+  - hosts: debain
       become: true
       tasks:
         - name: update apt packages
