@@ -1,0 +1,13 @@
+---
+- host: debian
+  become: true
+  tasks:
+    - name: "Installing curl"
+      apt:
+        - curl
+        - iperf3
+        - htop
+        - wget
+        - git
+      state: present
+      update_cache: true
